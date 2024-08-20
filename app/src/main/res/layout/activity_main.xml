@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/main_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="首 页"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/main_rb_homepage"
+            style="@style/main_rb"
+            android:checked="true"
+            android:drawableTop="@drawable/main_rb_homepage"
+            android:text="@string/label_home" />
+        <RadioButton
+            android:id="@+id/main_rb_message"
+            style="@style/main_rb"
+            android:drawableTop="@drawable/main_rb_message"
+            android:text="@string/label_message" />
+        <RadioButton
+            android:id="@+id/main_rb_service"
+            style="@style/main_rb"
+            android:drawableTop="@drawable/main_rb_service"
+            android:text="@string/label_service" />
+        <RadioButton
+            android:id="@+id/main_rb_submit"
+            style="@style/main_rb"
+            android:drawableTop="@drawable/main_rb_submit"
+            android:text="@string/label_submit" />
+        <RadioButton
+            android:id="@+id/main_rb_myself"
+            style="@style/main_rb"
+            android:drawableTop="@drawable/main_rb_myself"
+            android:text="@string/label_myself" />
+
+    </RadioGroup>
+<!--    中间部分使用布局进行占位使用fragment替换这块布局-->
+    <LinearLayout
+        android:id="@+id/main_layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/main_tv_title"
+        android:layout_above="@id/main_rg"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_item_bg_selector"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/tv_food_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/banner"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_food_pic"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="玫瑰话创意蛋糕"/>
+        <TextView
+            android:id="@+id/tv_taste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玫瑰花 奶油 鸡蛋"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            android:background="@color/taste_bg_color"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tv_sale_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月销售额"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/color_gray"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥100"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/price_red"
+            android:textSize="16sp"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_car"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:text="加入购物车"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/add_car_selector"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>

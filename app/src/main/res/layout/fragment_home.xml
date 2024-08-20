@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/homefrag_vp_show"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+    <LinearLayout
+        android:id="@+id/homefrag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/homefrag_vp_show"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"/>
+<!--    用于表示美食小吃、景点门票、电影演出、酒店民宿-->
+    <LinearLayout
+        android:id="@+id/homefrag_menu"
+        android:layout_below="@id/homefrag_vp_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frag_bg"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/frag_tv_food"
+            style="@style/indextext"
+            android:text="美食餐饮"
+            android:drawableTop="@mipmap/icon_food"
+
+            />
+        <TextView
+            android:id="@+id/frag_tv_hotel"
+            style="@style/indextext"
+            android:text="酒店民宿"
+            android:drawableTop="@mipmap/icon_hotel"
+            />
+        <TextView
+            android:id="@+id/frag_tv_beauty"
+            style="@style/indextext"
+            android:text="附近诊所"
+            android:drawableTop="@mipmap/icon_hosp"
+            />
+        <TextView
+            android:id="@+id/frag_tv_movie"
+            style="@style/indextext"
+            android:text="医生建议"
+            android:drawableTop="@mipmap/icon_doctor"
+            />
+
+
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_below="@id/homefrag_menu"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <GridView
+        android:id="@+id/homefrag_gv"
+        android:padding="10dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/homefrag_menu"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

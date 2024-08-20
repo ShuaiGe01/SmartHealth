@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:layout_marginLeft="5dp"
+    android:background="@drawable/item_bg"
+    >
+
+    <ImageView
+        android:id="@+id/item_iv_blog"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/greatwall"
+        />
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:text="不到长城非好汉,领略长城的壮阔吧"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_blog_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/myicon2"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:id="@+id/item_blog_id"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="第一个注册用户"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

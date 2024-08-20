@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".submit.PlayVideoActivity"
+    android:orientation="vertical">
+    <SurfaceView
+    android:id="@+id/surfaceView"
+    android:layout_weight="10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rotation="90"/>
+    <!--水平线性布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!--播放按钮-->
+        <Button
+            android:id="@+id/play1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="播放"/>
+        <!--暂停按钮-->
+        <Button
+            android:id="@+id/pause1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+        <!--停止按钮-->
+        <Button
+            android:id="@+id/stop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上传" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

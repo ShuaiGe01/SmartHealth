@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/item_bg_selector"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/iv_shop_pic"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/banner"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_shop_pic"
+        android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蛋糕房"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_sale_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small_size"
+            android:text="月销售额"/>
+        <TextView
+            android:id="@+id/tv_offer_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small_size"
+            android:text="起送￥90配送￥5"/>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="福利"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_small_size"
+                android:padding="2dp"/>
+            <TextView
+                android:id="@+id/tv_welfare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进店可获得一个香草冰淇淋"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配送约2-5小时"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

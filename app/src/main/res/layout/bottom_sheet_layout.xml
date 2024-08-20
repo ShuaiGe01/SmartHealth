@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:layout_margin="3dp"
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相 机"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+    <TextView
+        android:layout_margin="3dp"
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="视 频"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+
+
+    <TextView
+        android:layout_margin="3dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/button2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="相 册"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+    <TextView
+
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/button3"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:text="取 消"
+        android:layout_marginTop="5dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

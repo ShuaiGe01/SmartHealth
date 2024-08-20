@@ -1,0 +1,202 @@
+﻿[
+{
+"id":1,
+"shopName":"蛋糕房",
+"saleNum":996,
+"offerPrice":100,
+"distributionCost":5,
+"welfare":"进店可获得一个香草冰淇淋",
+"time":"配送约2-5小时",
+"shopPic":"http://172.16.43.110:8080/order/img/shop/shop1.png",
+"shopNotice":"公告：下单后2-5小时送达！请耐心等候",
+"foodList":[
+	{ 
+	"foodId":"1",
+	"foodName":"招牌丰收硕果12寸",
+	"taste":"水果、奶油、面包、鸡蛋",
+	"saleNum":"50",
+	"price":198,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food1.png"
+	},
+	{
+	"foodId":"2",
+	"foodName":"玫瑰花创意蛋糕",
+	"taste":"玫瑰花、奶油、鸡蛋",
+	"saleNum":"100",
+	"price":148,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food2.png"
+	},
+	{
+	"foodId":"3",
+	"foodName":"布朗熊与可妮",
+	"taste":"奶油、巧克力、果粒夹层",
+	"saleNum":"80",
+	"price":90,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food3.png"
+	}
+	]
+},
+{
+"id":2,
+"shopName":"爪哇咖啡.西餐.酒吧",
+"saleNum":11,
+"offerPrice":20,
+"distributionCost":7,
+"welfare":"进店即可送一杯拿铁咖啡",
+"time":"配送约40分钟",
+"shopPic":"http://172.16.43.110:8080/order/img/shop/shop2.png",
+"shopNotice":"公告：本店周一到周五所有套餐打八折，送咖啡。",
+"foodList":[
+	{ 
+	"foodId":"1",
+	"foodName":"双人牛排套餐",
+	"taste":"招牌牛仔骨配煎蛋及意大利面",
+	"saleNum":"50",
+	"price":575,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food21.png"
+	},
+	{
+	"foodId":"2",
+	"foodName":"单人饮品套餐",
+	"taste":"摩卡、提拉米苏蛋糕",
+	"saleNum":"79",
+	"price":49,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food22.png"
+	},
+	{
+	"foodId":"3",
+	"foodName":"浪漫情侣套餐",
+	"taste":"铁板牛仔骨牛排、铁板菲力牛排、烟熏三文鱼佐土豆泥",
+	"saleNum":"47",
+	"price":368,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food23.png"
+	}
+	]
+},
+{
+"id":3,
+"shopName":"必胜客",
+"saleNum":10,
+"offerPrice":15,
+"distributionCost":5,
+"welfare":"下单即可获得一个￥5优惠券",
+"time":"配送约20分钟",
+"shopPic":"http://172.16.43.110:8080/order/img/shop/shop3.png",
+"shopNotice":"公告：狂欢尽兴 必胜有礼 5折开抢。",
+"foodList":[
+	{ 
+	"foodId":"1",
+	"foodName":"3份单人工作日特惠餐",
+	"taste":"披萨、沙拉、柠檬红茶",
+	"saleNum":"50",
+	"price":99,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food31.png"
+	},
+	{
+	"foodId":"2",
+	"foodName":"拼盘+嗨杯鲜果茶",
+	"taste":"薯条、鸡翅、鸡米花",
+	"saleNum":"140",
+	"price":49,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food32.png"
+	},
+	{
+	"foodId":"3",
+	"foodName":"德克萨斯牛排2份",
+	"taste":"牛肉、柠檬茶",
+	"saleNum":"141",
+	"price":57,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food33.png"
+	}
+	]
+},
+{
+"id":4,
+"shopName":"艾尚夜宵",
+"saleNum":496,
+"offerPrice":20,
+"distributionCost":13,
+"welfare":"下单即可获得一个￥15优惠券",
+"time":"配送约42分钟",
+"shopPic":"http://172.16.43.110:8080/order/img/shop/shop4.png",
+"shopNotice":"公告：本店赠送爱心早餐。",
+"foodList":[
+	{ 
+	"foodId":"1",
+	"foodName":"烤牛肉炒饭",
+	"taste":"原味、牛肉、玉米、豌豆、胡萝卜",
+	"saleNum":"102",
+	"price":18.8,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food41.png"
+	},
+	{
+	"foodId":"2",
+	"foodName":"嫩豆腐汤+米饭",
+	"taste":"香辣、豆腐花、鸡蛋",
+	"saleNum":"66",
+	"price":14.5,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food42.png"
+	},
+	{
+	"foodId":"3",
+	"foodName":"超辣-酸辣土豆丝",
+	"taste":"酸辣、土豆、青尖椒",
+	"saleNum":"59",
+	"price":14,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food43.png"
+	}
+	]
+},
+{
+"id":5,
+"shopName":"上岛咖啡",
+"saleNum":300,
+"offerPrice":30,
+"distributionCost":10,
+"welfare":"下单即可获得一个￥30优惠券",
+"time":"配送约30分钟",
+"shopPic":"http://172.16.43.110:8080/order/img/shop/shop5.png",
+"shopNotice":"公告：本店牛排买一送一。",
+"foodList":[
+	{ 
+	"foodId":"1",
+	"foodName":"特惠双人餐",
+	"taste":"牛排、沙拉、浓汤",
+	"saleNum":"102",
+	"price":109,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food51.png"
+	},
+	{
+	"foodId":"2",
+	"foodName":"超值双人餐",
+	"taste":"牛排、法包、蔬菜沙拉",
+	"saleNum":"100",
+	"price":139,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food52.png"
+	},
+	{
+	"foodId":"3",
+	"foodName":"双人饮品",
+	"taste":"茉莉白龙王、卡布奇诺",
+	"saleNum":"70",
+	"price":69,
+	"count":0,
+	"foodPic":"http://172.16.43.110:8080/order/img/food/food53.png"
+	}
+	]
+}
+]

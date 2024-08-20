@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="first"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortlabel"
+        android:shortcutLongLabel="@string/longlabel"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.travelassistant"
+            android:targetClass="com.example.travelassistant.MainActivity"/>
+        <categories android:name="android.shortcut.conversion"/>
+
+    </shortcut>
+
+</shortcuts>

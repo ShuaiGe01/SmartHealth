@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">医小康</string>
+    <string name="label_home">主页</string>
+    <string name="label_message">消息</string>
+    <string name="label_service">服务</string>
+    <string name="label_submit">发贴</string>
+    <string name="label_myself">我的</string>
+    <string name="channel_name">ChannelN</string>
+    <string name="shortlabel">first</string>
+    <string name="longlabel">启停活动</string>
+    <string name="channel_description">ChannelD</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".submit.SubmitFragment"
+    >
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/submitfrag_et_addTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="添加标题">
+
+    </EditText>
+
+    <ImageView
+        android:layout_below="@id/submitfrag_et_addTitle"
+        android:layout_marginTop="10dp"
+        android:id="@+id/submitfrag_iv_addimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/addimage"
+        />
+    <EditText
+        android:gravity="left"
+        android:hint="说点什么吧..."
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:inputType="textMultiLine"
+        android:maxLines="6"
+        android:id="@+id/submitfrag_et_addtext"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/submitfrag_iv_addimage"/>
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/submitfrag_et_addtext">
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="取消"
+            android:background="@color/blue"
+
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="发表"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+
+
+            android:background="@color/bluemin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

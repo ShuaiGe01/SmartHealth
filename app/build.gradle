@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.travelassistant'
+    compileSdk 34
+    buildToolsVersion "27.0.2"
+
+    defaultConfig {
+        applicationId "com.example.travelassistant"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        encoding='UTF-8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {//加上这些代码
+        pickFirst 'lib/x86/libsqlite.so'
+        pickFirst 'lib/x86_64/libsqlite.so'
+        pickFirst 'lib/armeabi-v7a/libsqlite.so'
+        pickFirst 'lib/arm64-v8a/libsqlite.so'
+        pickFirst 'lib/x86/libhyphenate.so'
+        pickFirst 'lib/x86_64/libhyphenate.so'
+        pickFirst 'lib/armeabi-v7a/libhyphenate.so'
+        pickFirst 'lib/arm64-v8a/libhyphenate.so'
+    }
+}
+
+dependencies {
+    implementation fileTree(include:['*jar'],dir:'libs')
+    implementation files('libs/BaiduLBS_Android.jar')
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'io.hyphenate:hyphenate-chat:3.8.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation "org.java-websocket:Java-WebSocket:1.3.9"
+    implementation 'com.alibaba:fastjson:1.2.76'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.4.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation project(path: ':ease')
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
